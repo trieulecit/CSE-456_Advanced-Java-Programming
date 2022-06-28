@@ -10,7 +10,7 @@ public class Question1 {
 		for (int i = 2; i <= n; i++) {
 			res *= i;
 		}
-		System.out.println(res + 1);
+		System.out.println(res);
 		sc.close();
 
 	}
