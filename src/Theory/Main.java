@@ -1,18 +1,15 @@
-package Exercises;
+package Theory;
 
-import java.util.Scanner;
-
-public class Question1 {
+public class Main {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
-		long res = 1;
-		for (int i = 2; i <= n; i++) {
-			res *= i;
+		EnumExample c1 = EnumExample.RED;
+		
+		System.out.println("Red Enum Name: " + c1.name());
+		System.out.println("Red Enum Value: " + c1.getValue());
+		
+		for(EnumExample color: EnumExample.values()) {
+			System.out.println("Enum value: " + color.getValue());
 		}
-		System.out.println(res);
-		sc.close();
-
 	}
 
 }
